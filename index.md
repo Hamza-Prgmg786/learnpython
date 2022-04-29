@@ -55,7 +55,7 @@ Unchangeable data in the program.
 To work around this, you use all capital letters to name a variable to indicate that the variable 
 should be treated as a constant. For example:
 
-# Define Constant_Name value
+Defining constant_name value;
  
 # DAY = 7
 ```
@@ -69,6 +69,9 @@ Python keywords reserved and not available for re-definition or overloading.
 ## Data_Types
 
 A variable is a named location used to store data in the memory. 
+
+#### 1. Integer
+
 Python int variable requires minimum 24 bytes on 32-bit / 64-bit system.
 It may vary as per hardware.
 ```
@@ -81,11 +84,22 @@ sys.getsizeof(-2) # prints 28
 It is helpful to think of variables as a container that holds data that can be changed later
 in the program. 
 
-#### 1. Integer
-
 Represent integers like 1, 10.
 ```
 number = 10
 ```
 
 #### 2. Floating point
+
+Python int variable requires minimum 24 bytes on 32-bit / 64-bit system.
+It may vary as per hardware.
+```
+import sys
+sys.getsizeof( float() ) # prints 24
+sys.getsizeof(0.0) # prints 24
+```
+
+Represent decimals like 1.23, -2.332.
+```
+number = 1.23
+```

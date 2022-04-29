@@ -25,3 +25,38 @@ Single-line comments
 ```
 # ...
 ```
+
+Multi-line comments
+
+```
+"""
+This is a comment
+written in
+more than just one line
+"""
+```
+
+## Variables
+
+Give a name to a space in memory.
+
+```
+variable_Name = value;
+
+a = 10;
+name = "Steve Jobs"
+```
+
+## Constants
+
+Unchangeable data in the program.
+
+```
+To work around this, you use all capital letters to name a variable to indicate that the variable should be treated as a constant. For example:
+
+#define Constant_Name value
+ 
+# DAY = 7
+```
+
+```

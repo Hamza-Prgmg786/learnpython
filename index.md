@@ -64,6 +64,6 @@ should be treated as a constant. For example:
 
 ## Keywords
 
-Python keywords Reserved and not available for re-definition or overloading.
+Python keywords reserved and not available for re-definition or overloading.
 
 ![avatar](/pics/python kewords.png)

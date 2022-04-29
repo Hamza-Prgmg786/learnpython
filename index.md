@@ -60,8 +60,6 @@ should be treated as a constant. For example:
 # DAY = 7
 ```
 
-```
-
 ## Keywords
 
 Python keywords reserved and not available for re-definition or overloading.

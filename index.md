@@ -52,11 +52,18 @@ name = "Steve Jobs"
 Unchangeable data in the program.
 
 ```
-To work around this, you use all capital letters to name a variable to indicate that the variable should be treated as a constant. For example:
+To work around this, you use all capital letters to name a variable to indicate that the variable 
+should be treated as a constant. For example:
 
-#define Constant_Name value
+# Define Constant_Name value
  
 # DAY = 7
 ```
 
 ```
+
+## Keywords
+
+Python keywords Reserved and not available for re-definition or overloading.
+
+![avatar](/pics/python kewords.png)

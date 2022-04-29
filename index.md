@@ -74,18 +74,20 @@ A variable is a named location used to store data in the memory.
 Python int variable requires minimum 24 bytes on 32-bit / 64-bit system.
 It may vary as per hardware.
 ```
-# Find size of int
-
 import sys
-
 sys.getsizeof( int() ) # prints 24
 sys.getsizeof(0) # prints 24
 sys.getsizeof(1) # prints 28
 sys.getsizeof(-2) # prints 28
 ```
+It is helpful to think of variables as a container that holds data that can be changed later
+in the program. 
 
+#### 1. Integer
+
+Represent integers like 1, 10.
 ```
 number = 10
 ```
-It is helpful to think of variables as a container that holds data that can be changed later
-in the program. 
+
+#### 2. Floating point

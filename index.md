@@ -66,4 +66,4 @@ should be treated as a constant. For example:
 
 Python keywords reserved and not available for re-definition or overloading.
 
-![avatar](python keywords.png)
+![avatar](/python keywords.png)

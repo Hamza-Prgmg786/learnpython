@@ -64,7 +64,7 @@ Defining constant_name value;
 
 Python keywords reserved and not available for re-definition or overloading.
 
-![avatar](/python keywords.png)
+![avatar](/python_keywords.png)
 
 ## Data_Types
 

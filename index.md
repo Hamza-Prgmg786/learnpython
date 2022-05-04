@@ -161,9 +161,7 @@ c = a > b ? a : b; // a > b is true then return a, false return b.
 
 Switch condition:
 ```
-Python does not have this.
-So, to get around this, we use Python’s built-in dictionary construct to implement cases and decided what to do when a case is met.
-We can also specify what to do when none is met.
+Python does not have this. So, to get around this, we use Python’s built-in dictionary construct to implement cases and decided what to do when a case is met. We can also specify what to do when none is met.
 ```
 
 

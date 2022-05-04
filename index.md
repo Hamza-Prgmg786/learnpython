@@ -7,7 +7,6 @@
 - [Constants](#Constants)
 - [Keywords](#Keywords)
 - [Data_Types](#Data_Types)
-- [Data_Input](#Data_Input)
 - [Operators](#Operators)
 - [Program_Control_Flow](#Program_Control_Flow)
 - [Array](#Array)
@@ -103,3 +102,68 @@ Represent decimals like 1.23, -2.332.
 ```
 number = 1.23
 ```
+
+#### 3. String
+
+```
+a = "Hello, World!"
+print(a)
+```
+
+#### 5. Boolean
+
+Represent True and False.
+
+```
+import sys
+sys.getsizeof( bool() ) # prints 24
+sys.getsizeof(True) # prints 28
+sys.getsizeof(False) # prints 24
+```
+
+```
+print(10 > 9)
+print(10 == 9)
+```
+
+```
++ - * / % ++ -- += >= || ! && ...
+```
+
+```
+pre-increment/decrement: a=2; b=++a; // Do b=a first and ++a, the result is a=3; b=3;
+```
+
+```
+post-increment/decrement: a=2; b=a++; // Do a++ first and b=a, the result is a=3; b=2;
+```
+
+## Program_Control_Flow
+
+#### 1. Selection statements
+
+If condition:
+```
+a = 10
+b = 5
+if b > a:
+  ...
+elif a == b:
+  ...
+else:
+  ...
+```
+
+Conditional Operator ?:
+```
+c = a > b ? a : b; // a > b is true then return a, false return b.
+```
+
+Switch condition:
+
+Python does not have this.
+So, to get around this, we use Python’s built-in dictionary construct to implement cases and decided what to do when a case is met.
+We can also specify what to do when none is met.
+
+
+

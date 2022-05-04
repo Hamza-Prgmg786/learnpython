@@ -318,6 +318,6 @@ def recursion(k):
     result = 0
   return result
 
-print("\n\nRecusrion")
+print("\n\nRecursion")
 recursion(6)
 ```

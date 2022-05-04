@@ -243,3 +243,81 @@ remove()  -> Removes the first item with the specified value.
 reverse() -> Reverses the order of the list.
 sort()    -> Sorts the list.
 ```
+
+## Functions
+
+Encapsulate a piece of frequently used code to reduce repetitive use of code.
+```
+def add(num_1, num_2): // num_1 and num_2 are parameters
+   sum = num_1 + num_2
+   return sum
+}
+
+if __name__ == '__main__':
+   a = 10
+   b = 20
+   sum = add(a, b) // a and b are arguments
+}
+```
+
+#### 1. Arbitrary Arguments, *args.
+
+if you do not know how many arguments that will be passed into your function.
+Add a * before the parameter name in the function definition.
+This way the function will receive a tuple of arguments, and can access the items accordingly:
+
+```
+def my_function(*children):
+  print("The children are " + kids[2])
+
+my_function("Steve", "Robert", "Sarah")
+```
+
+#### 2. Default Parameter Value.
+
+If we call the function without argument, it uses the default value:
+
+```
+def my_function(child = "Steve"):
+  print("My Name is" + child)
+
+my_function("Sarah")
+my_function("Robert")
+my_function()
+```
+
+#### 3. Passing a List as an Argument.
+
+You can send any data types of argument to a function (string, number, list, dictionary etc.).
+It will be treated as the same data type inside the function.
+
+```
+def my_function(child):
+  for x in child:
+    print(x)
+
+childrens = ["Steve", "Robert", "Sarah"]
+
+my_function(childrens)
+```
+
+#### 4. Recursion.
+
+Python also accepts function recursion, which means a defined function can call itself.
+
+Recursion is a common mathematical and programming concept. 
+It means that a function calls itself. 
+This has the benefit of meaning that you can loop through data to reach a result.
+
+```
+def recursion(k):
+  if (k > 0):
+    result = k + recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecusrion")
+recursion(6)
+```

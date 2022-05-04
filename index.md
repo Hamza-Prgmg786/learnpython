@@ -11,9 +11,6 @@
 - [Program_Control_Flow](#Program_Control_Flow)
 - [Array](#Array)
 - [Functions](#Functions)
-- [Pointers](#Pointers)
-- [Struct](#Struct)
-- [Memory_Layout](#Memory_Layout)
 - [Reference](#Reference)
 - [Object_Oriented_Programming](#Object_Oriented_Programming)
 

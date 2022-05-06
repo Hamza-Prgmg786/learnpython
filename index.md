@@ -361,7 +361,7 @@ p1.myfunc()
 
 super()        -> Python also has a super() function that will make the child 
                   class inherit all the methods and properties from its parent:
-Properties()   -> In the example below, the year ____ should be a variable, 
+Properties()   -> In the example below, the year should be a variable, 
                   passed into the Student class when creating student objects. 
                   To do so, add another parameter in the __init__() function:
 Methods()      -> If you add a method in the child class with the same name as 

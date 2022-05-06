@@ -359,15 +359,24 @@ p1.myfunc()
 
 #### 3. Inheritance with super(), Properties, Methods.
 
+```
 super()        -> Python also has a super() function that will make the child 
                   class inherit all the methods and properties from its parent:
+```
+
+```
 Properties()   -> In the example below, the year should be a variable, 
                   passed into the Student class when creating student objects. 
                   To do so, add another parameter in the __init__() function:
+```
+
+```
 Methods()      -> If you add a method in the child class with the same name as 
                   a function in the parent class, the inheritance of the parent 
                   method will be overridden.
-```                  
+```
+
+```
 class Student(Person):
   def __init__(self, fname, lname, year):
     super().__init__(fname, lname)

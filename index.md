@@ -318,3 +318,61 @@ def recursion(k):
 print("\n\nRecursion")
 recursion(6)
 ```
+
+## Object_Oriented_Programming.
+
+#### 1. The __init__() Function.
+
+To understand the meaning of classes we have to understand the 
+built-in __init__() function.
+All classes have a function called __init__(), which is always executed 
+when the class is being initiated.
+Use the __init__() function to assign values to object properties 
+or other operations that are necessary to do when the object is being created:
+
+```
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("Steve", 70)
+
+print(p1.name)
+print(p1.age)
+```
+
+#### 2. Object Methods with self Parameter.
+
+```
+class Person:
+  def __init__(object, name, age):
+    object.name = name
+    object.age = age
+
+  def myfunc(nme):
+    print("My name is " + nme.name)
+
+p1 = Person("Steve", 70)
+p1.myfunc()
+```
+
+#### 3. Inheritance with super(), Properties, Methods.
+
+super()        -> Python also has a super() function that will make the child 
+                  class inherit all the methods and properties from its parent:
+Properties()   -> In the example below, the year ____ should be a variable, 
+                  passed into the Student class when creating student objects. 
+                  To do so, add another parameter in the __init__() function:
+Methods()      -> If you add a method in the child class with the same name as 
+                  a function in the parent class, the inheritance of the parent 
+                  method will be overridden.
+```                  
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
+
+  def welcome(self):
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+```    

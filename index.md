@@ -328,7 +328,10 @@ built-in __init__() function.
 All classes have a function called __init__(), which is always executed 
 when the class is being initiated.
 Use the __init__() function to assign values to object properties 
-or other operations that are necessary to do when the object is being created:
+or other operations that are necessary to do when the object is being created.
+Constructor and destructor function automatically executed in Python. 
+Constructor when an object of a class is created and Destructor when an object exit from the scope:
+
 
 ```
 class Person:

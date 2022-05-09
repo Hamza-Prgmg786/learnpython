@@ -328,9 +328,7 @@ built-in __init__() function.
 All classes have a function called __init__(), which is always executed 
 when the class is being initiated.
 Use the __init__() function to assign values to object properties 
-or other operations that are necessary to do when the object is being created.
-Constructor and destructor function automatically executed in Python. 
-Constructor when an object of a class is created and Destructor when an object exit from the scope:
+or other operations that are necessary to do when the object is being created.:
 
 
 ```
@@ -388,3 +386,55 @@ class Student(Person):
   def welcome(self):
     print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
 ```    
+
+#### 4. Constructors & Destructors.
+
+Constructor and destructor function automatically executed in Python. 
+Constructor when an object of a class is created and Destructor when an object exit from the scope:
+
+Constructors;
+
+```
+class Test:
+
+    def __init__(self, number):
+        print("Constructor of class Test...")
+        self.number = number
+        print("The value is :", number)
+
+
+S = Sample(100)
+
+Output:
+
+Constructor of class Test...
+The value is : 100
+```
+
+Destructors;
+
+```
+class Test:
+    number = 0
+
+    def __init__(self, variable):
+        Test.number += 1
+        self.variable = variable
+
+        print("Object value is = ", variable)
+        print("Variable value = ", Test.number)
+
+    def __del__(self):
+        Test.number -= 1
+
+        print("Object with value %d is deleted" % self.variable)
+
+
+S1 = Test(10)
+
+Output:
+
+Object value is = 10
+Variable value = 1
+Object with value 10 is deleted
+```

@@ -13,6 +13,9 @@
 - [Functions](#Functions)
 - [Reference](#Reference)
 - [Object_Oriented_Programming](#Object_Oriented_Programming)
+- [Numbers](#Number)
+- [Python_Casting](#Python_Casting)
+- [Python_Lists](#Python_Lists)
 
 ## Comments
 
@@ -437,4 +440,260 @@ Output:
 Object value is = 10
 Variable value = 1
 Object with value 10 is deleted
+```
+
+## Numbers.
+There are three numeric types in Python:
+
+1) int
+2) float
+3) complex
+
+Variables of numeric types are created when you assign a value to them:
+```
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+To verify the type of any object in Python, use the type() function:
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+#### 1. Int.
+
+Int, or integer, is a whole number, positive or negative, 
+without decimals, of unlimited length.
+
+Integers:
+```
+x = 1
+y = 35656222554887711
+z = -3255522
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+#### 2. Float.
+
+Float, or "floating point number" is a number, positive or negative, 
+containing one or more decimals.
+
+```
+x = 1.10
+y = 1.0
+z = -35.59
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+Float can also be scientific numbers with an "e" to indicate the power of 10.
+
+```
+x = 35e3
+y = 12E4
+z = -87.7e100
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+#### 3. Complex.
+
+Complex numbers are written with a "j" as the imaginary part:
+
+```
+x = 3+5j
+y = 5j
+z = -5j
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+#### 4. Type Conversion.
+
+You can convert from one type to another with the int(), float(), and complex() methods:
+
+```
+x = 1    # int
+y = 2.8  # float
+z = 1j   # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+```
+#### 5. Random Number.
+
+Python does not have a random() function to make a random number, 
+but Python has a built-in module called random that can be used to 
+make random numbers:
+
+```
+Import the random module, and display a random number between 1 and 9:
+
+import random
+
+print(random.randrange(1, 10))
+```
+
+## Python Casting.
+
+Specify a Variable Type.
+
+Python is an object-orientated language, and as such it uses 
+classes to define data types, including its primitive types.
+
+Casting in python is therefore done using constructor functions:
+
+1) int() ; constructs an integer number from an integer literal, a float literal
+(by removing all decimals), or a string literal (providing the string represents a whole number).
+2) float() ; constructs a float number from an integer literal, a float literal or a string literal
+(providing the string represents a float or an integer).
+3) str() ; constructs a string from a wide variety of data types, including strings, integer 
+literals and float literals.
+
+Integers:
+
+```
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+```
+
+Floats:
+
+```
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+```
+
+Strings:
+
+```
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+```
+
+## Python Lists.
+
+
+Lists are used to store multiple items in a single variable.
+
+Lists are one of 4 built-in data types in Python used to store collections
+of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+Lists are created using square brackets:
+
+```
+list = ["Capgemini", "Altran", "Sogeti"]
+print(list)
+```
+
+#### 1. List Items.
+
+List items are ordered, changeable, and allow duplicate values.
+
+List items are indexed, the first item has index [0], the second item has index [1] etc.
+
+#### 2. Ordered.
+```
+When we say that lists are ordered, it means that the items have a defined order,
+and that order will not change.
+
+If you add new items to a list, the new items will be placed at the end of the list.
+```
+
+#### 3. Changeable.
+```
+The list is changeable, meaning that we can change, add, and remove items in a 
+list after it has been created.
+```
+
+#### 4. Allow Duplicates.
+```
+Since lists are indexed, lists can have items with the same value:
+
+list = ["Capgemini", "Altran", "Sogeti", "Capgemini", "Altran", "Sogeti"]
+print(list)
+```
+
+#### 5. List Length.
+```
+list = ["Capgemini", "Altran", "Sogeti"]
+print(len(list))
+```
+
+#### 6. List Items - Data Types.
+```
+List items can be of any data type:
+
+list1 = ["Capgemini", "Altran", "Sogeti"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]
+
+
+More Examples;
+
+list = ["abc", 34, True, 40, "male"]
+```
+
+#### 7. Types.
+```
+From Python's perspective, lists are defined as objects with the data type 'list':
+
+<class 'list'>
+
+What is the data type of a list?
+
+list = ["Capgemini", "Altran", "Sogeti"]
+print(type(list))
+```
+
+#### 7. The list() Constructor.
+```
+Using the list() constructor to make a List:
+
+mylist = list(("Capgemini", "Altran", "Sogeti")) 
+# note the double round-brackets
+
+print(mylist)
+```
+
+#### 7. Python Collections (Arrays).
+```
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
 ```
